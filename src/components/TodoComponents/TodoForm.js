@@ -6,13 +6,16 @@ const TodoForm = props => {
             <form>
                 <input 
                     placeholder = "ToDo"
-                    name = "task"
+                    name = "task" //make sure this matches up with line below
                     value = {props.task}
                     onChange = {props.myChangeFunction}
                     
                 />
                 <button type = "submit" onClick = {props.myClickFunction}>
                     Add
+                </button>
+                <button onClick = {props.clearCompletedFunction}>
+                    Clear completed
                 </button>
             </form>
         </div>
