@@ -1,8 +1,9 @@
 import React from 'react';
 import ToDoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
-import '../Todo.css';
-//import Todo from './components/TodoComponents/Todo';
+import './components/TodoComponents/Todo.css';
+import './components/TodoComponents/App.css';
+
 
 
 class App extends React.Component {
@@ -66,21 +67,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class = "app">
         <h2>Welcome to your Todo App!</h2>
-
         <ToDoList ToDoArray = {this.state.toDo}
           toggleSwitch = {this.completedToggleOnClick}
         />
-
         <TodoForm 
           task = {this.state.inputText} 
-          
           myChangeFunction = {this.handleChange}
           myClickFunction = {this.addTask} 
           clearCompletedFunction = {this.clearCompletedTasks}
         />
-
       </div>
     );
   }

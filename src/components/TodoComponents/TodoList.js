@@ -7,7 +7,7 @@ import ToDo from './Todo';
 const ToDoList = props => {
     //console.log('Todolist', props.ToDoArray)
     return (
-        <div>
+        <div class = "list">
             {props.ToDoArray.map(Todo =>  (
                 <ToDo 
                     printout = {Todo}

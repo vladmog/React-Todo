@@ -2,7 +2,7 @@ import React from 'react';
 
 const TodoForm = props => {
     return (
-        <div>
+        <div class = "toDoForm">
             <form>
                 <input 
                     placeholder = "ToDo"
