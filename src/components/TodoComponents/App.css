@@ -1,0 +1,25 @@
+.app {
+    width: 500px;
+    margin: auto;
+    background-color: yellow;
+}
+
+.toDoForm {
+    width: 75%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.p {
+    width: 100%;
+    margin: auto;
+}
+
+.list {
+    padding-bottom: 20px;
+}
